@@ -17,5 +17,4 @@ public class Itest {
 		}
 		return "Exception doesn't work";
 	}
-	
 }

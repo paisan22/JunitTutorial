@@ -7,6 +7,4 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({PrepareMyBagTest.class, AddPencilsTest.class})
 public class SuiteTest {
 	
-	
-	
 }

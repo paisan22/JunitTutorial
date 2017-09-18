@@ -33,10 +33,12 @@ public class ItestTest {
 	
 	@Test
 	public void testExpectedException() throws IllegalArgumentException {
-		new Itest().getIllegalArgumentException();
+				
+		this.exception.expect(IllegalArgumentException.class);
 		
-		exception.expect(IllegalArgumentException.class);
-		exception.expectMessage(Matchers.containsString("exception message"));
+		exception.expectMessage("exception message");
+		
+		new Itest().getIllegalArgumentException();
 		
 	}
 }
